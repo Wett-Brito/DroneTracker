@@ -27,13 +27,11 @@ public class DroneHealthBO {
     }
 
     private String createMensagemEmail(DroneInfo droneInfo) {
-        String message = "Olá, seu drone possui problemas em sua saúde, seus dados são: ";
+        String message = "Olá, a medição encontrou problemas no ambiente, os dados são: ";
 
         message = message.concat(String.format("ID: %d;", droneInfo.getId_drone()));
         message = message.concat(String.format("Temperatura: %d;", droneInfo.getTemperatura()));
         message = message.concat(String.format("Umidade: %d.", droneInfo.getUmidade()));
-
-        message = message.concat("Por favor, desativar o drone para menores danos !");
 
         return message;
     }

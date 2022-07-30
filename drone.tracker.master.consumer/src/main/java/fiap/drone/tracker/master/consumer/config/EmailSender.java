@@ -22,7 +22,7 @@ public class EmailSender {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setFrom(from);
         message.setTo(to);
-        message.setSubject("Drone Health");
+        message.setSubject("Drone Tracker");
         message.setText(droneMessage);
         emailSender.send(message);
     }
